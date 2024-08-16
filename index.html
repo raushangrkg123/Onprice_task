@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            color: #423030;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #645353;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: #ff9933;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+            animation: slideIn 2s ease-in-out;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Flag Colors as Background */
+        .flag-strip {
+            height: 12px;
+            background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+            margin-bottom: 20px;
+            animation: expand 2s ease-in-out;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 30px 20px;
+            background: linear-gradient(120deg, #fffdfd, #e6fae6);
+            
+           
+        }
+
+        .content p {
+            margin: 0 0 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Button Styles */
+        .content .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #138808;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .content .button:hover {
+            background-color: #0b6b06;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color:#ff9933;
+            color: #ffffff;
+            font-size: 14px;
+            border-radius: 0 0 15px 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+
+        @keyframes expand {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                margin: 10px;
+            }
+
+            .content .button {
+                width: 100%;
+                padding: 15px 0;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>Celebrate Independence Month!</h1>
+        </div>
+        <div class="flag-strip"></div>
+        <div class="content">
+            <p>Dear <span style="font-weight: bold;">Lakhan Lodhi </span>,</p>
+            <p ><span style="color:#ff9933"> In celebration of Independence Month, IJAECE is thrilled to offer an exclusive </span> <span style="color:#000000"> 100% discount on paper
+                publications just for our valued reviewers. Simply use </span> <span style="color:#138808"> the referral code to avail this special offer. </span></p>
+            <p>Not a reviewer yet? No worries! You can easily sign up here to take advantage of this incredible
+                opportunity:</p>
+            <a href="#" class="button">Register as a Reviewer</a>
+            <p><strong>Please note:</strong> Publication processing fees will still apply.</p>
+            <p>Best regards,<br>IJAECE Team<br>International Journal of Advancement in Electronics & Computer Engineering (IJAECE)</p>
+        </div>
+        <div class="footer">
+            &copy; 2024 IJAECE. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
